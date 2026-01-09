@@ -1,0 +1,14 @@
+Dont forget to run roscore first
+
+catkin_make
+source devel/setup.bash
+
+to see rviz meaningfully, use:
+rosrun tf2_ros static_transform_publisher \
+0 0 0 \
+0 3.141592653589793 0 \
+camera_init camera_init_flipped
+
+body, camera_init, world, slam_init frames came from fast_lio
+
+saved map is in the PCD folder. View it by using `pcl_viewer scans.pcd`

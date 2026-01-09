@@ -15,5 +15,6 @@ docker run --rm -it \
   -v /tmp/.X11-unix:/tmp/.X11-unix:rw \
   -v $HOME/.Xauthority:/root/.Xauthority:ro \
   -v /home/buraks/workspace:/data:rw \
+  -v /media/buraks/T7/PHD/Dataset/NTU_viral_dataset:/dataset:rw \
   buraks1/ros-noetic-custom:fastlio \
   bash
