@@ -1,4 +1,10 @@
 Dont forget to run roscore first
+roslaunch fast_lio run_ntuviral.launch
+
+./run_one_bag_ntuviral.sh /data/fastLio_ros1/outputs /dataset /data/fastLio_ros1/src/FAST_LIO eee_01 false true 450 0 0 0.75 -1
+
+
+output is at mat_pre.txt , I added new column (as first) to print bag time
 
 catkin_make
 source devel/setup.bash
